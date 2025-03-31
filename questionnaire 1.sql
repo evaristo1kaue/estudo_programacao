@@ -50,4 +50,22 @@ LIMIT 5;
 
 SELECT prim_contributory_cause, injuries_incapacitating  
 FROM traffic_accidents ta
-WHERE injuries_incapacitating > '0.0'*/
+WHERE injuries_incapacitating > '0.0'
+
+-- Questão 2 D
+SELECT crash_hour, avg(injuries_total) injuries_media
+FROM traffic_accidents
+GROUP BY crash_hour
+ORDER BY crash_hour asc
+
+-- Questão 3 D
+SELECT crash_day_of_week, COUNT(*) 
+FROM traffic_accidents 
+WHERE intersection_related_i = 'Y' 
+GROUP BY crash_day_of_week 
+
+-- Questão 4 D
+SELECT traffic_control_device, COUNT(*) 
+FROM traffic_accidents 
+WHERE damage = 'OVER $1,500' 
+GROUP BY traffic_control_device*/
