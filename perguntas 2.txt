@@ -1,0 +1,19 @@
+Nível Fácil:
+
+1.  Liste os 10 principais tipos de acidentes (first_crash_type) com o maior número de acidentes.
+2.  Quantos acidentes ocorreram em cada mês do ano?
+3.  Quais são as 3 condições climáticas (weather_condition) mais comuns em acidentes?
+4.  Qual é o número total de feridos (injuries_total) registrados na tabela?
+5.  Quantos acidentes ocorreram durante a noite (lighting_condition)?
+
+Nível Médio:
+
+1.  Quais são os 5 principais tipos de dispositivos de controle de tráfego (traffic_control_device) presentes em acidentes com lesões fatais?
+2.  Calcule a média de feridos por acidente (injuries_total / número de acidentes).
+3.  Quais são os 3 principais tipos de defeitos na via (road_defect) associados a acidentes com lesões graves (most_severe_injury)?
+4.  Encontre os 5 principais dias da semana (crash_day_of_week) com o maior número de acidentes.
+5.  Liste os tipos de alinhamento da via (alignment) e a quantidade de acidentes em cada tipo.
+
+Nível Difícil:
+
+1.  Crie uma consulta que mostre a distribuição de acidentes por tipo de via (trafficway_type), condição de iluminação (lighting_condition) e condição climática (weather_condition).

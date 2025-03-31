@@ -1,0 +1,25 @@
+# Questionário SQL - Tabela traffic_accidents
+
+## Nível Fácil
+
+1. Escreva uma consulta SQL para selecionar todas as colunas e linhas da tabela `traffic_accidents`.
+2. Escreva uma consulta SQL para selecionar as colunas `crash_date`, `crash_hour`, e `crash_day_of_week`.
+3. Escreva uma consulta SQL para encontrar todos os acidentes que ocorreram em um dia específico (por exemplo, '2023-10-26').
+4. Escreva uma consulta SQL para encontrar todos os acidentes que ocorreram durante a noite (`lighting_condition` = 'DARKNESS').
+5. Escreva uma consulta SQL para encontrar o número total de acidentes registrados.
+
+## Nível Médio
+
+1. Escreva uma consulta SQL para encontrar o número de acidentes por `weather_condition`.
+2. Escreva uma consulta SQL para encontrar o tipo de `first_crash_type` mais comum.
+3. Escreva uma consulta SQL para encontrar o número de acidentes por `crash_day_of_week`.
+4. Escreva uma consulta SQL para encontrar a média de `num_units` por `crash_type`.
+5. Escreva uma consulta SQL para encontrar todos os acidentes onde houve ferimentos fatais (`injuries_fatal` > 0).
+
+## Nível Difícil
+
+1. Escreva uma consulta SQL para encontrar os 5 `prim_contributory_cause` mais comuns que resultaram em ferimentos incapacitantes (`injuries_incapacitating` > 0).
+2. Escreva uma consulta SQL para encontrar a média de `injuries_total` por `crash_hour`, ordenando os resultados por hora.
+3. Escreva uma consulta SQL para encontrar o dia da semana com o maior número de acidentes relacionados a interseções (`intersection_related_i` = 'Y').
+4. Escreva uma consulta SQL para encontrar o tipo de `traffic_control_device` que está mais frequentemente associado a acidentes com danos significativos (`damage` = 'OVER $1,500').
+5. Escreva uma consulta SQL para encontrar os meses com a maior variação no número de acidentes (`crash_month`), calculando a diferença entre o mês com mais acidentes e o mês com menos acidentes.
