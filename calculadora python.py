@@ -1,48 +1,55 @@
-num1 = 0
-num2 = 0
-resultado = 0
-numsaida = 1  # Inicializa com um valor diferente de 0 para entrar no loop
+def obter_numero(mensagem):
+    """Obtém um número inteiro do usuário com tratamento de erros."""
+    while True:
+        try:
+            return int(input(mensagem))
+        except ValueError:
+            print("Entrada inválida. Digite um número inteiro.")
 
-while True:  # Loop infinito (simulando o "do")
-    print("-----------------------Calculadora de 2 números-----------------------")
-    print("Opções são soma, subtração, divisão e multiplicação")
-    print("Para sair digite 0 ou 'sair'")
-    print("---------------------------------------------------------------------")
-    operaçãodesejada = input("Operação: ")
 
-    if operaçãodesejada.lower() == "sair":
-        break
-
-    if operaçãodesejada not in ["soma", "subtração", "divisão", "multiplicação"]:
-        print("Operação inválida")
-        continue
-
-    try:
-        num1 = int(input("Primeiro número: "))
-        num2 = int(input("Segundo número: "))
-    except ValueError:
-        print("Entrada inválida. Digite números inteiros.")
-        continue
-
-    if operaçãodesejada == "soma":
-        resultado = num1 + num2
-    elif operaçãodesejada == "subtração":
-        resultado = num1 - num2
-    elif operaçãodesejada == "divisão":
+def calcular(operacao, num1, num2):
+    """Realiza o cálculo com base na operação escolhida."""
+    if operacao == "soma":
+        return num1 + num2
+    elif operacao == "subtração":
+        return num1 - num2
+    elif operacao == "divisão":
         if num2 == 0:
             print("Erro: Divisão por zero!")
+            return None  # Retorna None para indicar um erro
+        return num1 / num2
+    elif operacao == "multiplicação":
+        return num1 * num2
+    else:
+        return None  # Retorna None para indicar uma operação inválida
+
+
+def main():
+    """Função principal que controla o fluxo da calculadora."""
+    while True:
+        print("-----------------------Calculadora de 2 números-----------------------")
+        print("Opções: soma, subtração, divisão, multiplicação")
+        print("Para sair digite 'sair'")
+        print("---------------------------------------------------------------------")
+
+        operacao = input("Operação: ").lower()
+
+        if operacao == "sair":
+            break
+
+        if operacao not in ["soma", "subtração", "divisão", "multiplicação"]:
+            print("Operação inválida.")
             continue
-        resultado = num1 / num2
-    elif operaçãodesejada == "multiplicação":
-        resultado = num1 * num2
 
-    print("Resultado:", resultado)
+        num1 = obter_numero("Primeiro número: ")
+        num2 = obter_numero("Segundo número: ")
 
-    try:
-        numsaida = int(input("Digite 0 para sair ou qualquer outro número para continuar: "))
-    except ValueError:
-        print("Entrada inválida. Digite um número inteiro.")
-        numsaida = 1 # Define um valor diferente de 0 para continuar o loop
+        resultado = calcular(operacao, num1, num2)
 
-    if numsaida == 0:
-        break  # Sai do loop se o usuário digitar 0
+        if resultado is not None:  # Verifica se houve erro no cálculo
+            print(f"Resultado: {resultado}")
+        print("---------------------------------------------------------------------")
+
+
+if __name__ == "__main__":
+    main()

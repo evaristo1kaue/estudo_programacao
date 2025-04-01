@@ -1,21 +1,40 @@
-print("---------Calculadora de IMC---------")
-peso = float(input("Digite seu peso: "))
-altura = float(input("Digite sua altura: "))
+while True:
+    print("---------Calculadora de IMC---------")
+    print("Para sair digite 'sair'")
+    print("------------------------------------")
+    try:
+        peso = input("Digite seu peso (em kg): ")
+        if peso.lower() == "sair":
+            break
+        peso = float(peso)
 
-imc = peso / (altura ** 2)
+        altura = input("Digite sua altura (em metros): ")
+        if altura.lower() == "sair":
+            break
+        altura = float(altura)
 
-if imc < 18.5:
-    print("Abaixo do peso")
-elif imc < 25:
-    print("Peso normal")
-elif imc < 30:
-    print("Sobrepeso")
-elif imc < 35:
-    print("Obesidade grau 1")
-elif imc < 40:
-    print("Obesidade grau 2")
-else:
-    print("Obesidade grau 3")
+        if altura <= 0 or peso <= 0:
+            print("Peso e altura devem ser maiores que zero.")
+            continue
 
-print("Seu IMC é:", imc)
-print("------------------------------------")
+        imc = peso / (altura ** 2)
+
+        print("------------------------------------")
+        if imc < 18.5:
+            print("Classificação: Abaixo do peso")
+        elif imc < 25:
+            print("Classificação: Peso normal")
+        elif imc < 30:
+            print("Classificação: Sobrepeso")
+        elif imc < 35:
+            print("Classificação: Obesidade grau 1")
+        elif imc < 40:
+            print("Classificação: Obesidade grau 2")
+        else:
+            print("Classificação: Obesidade grau 3")
+
+        print(f"Seu IMC é: {imc:.2f}")
+        print("------------------------------------")
+
+    except ValueError:
+        print("Entrada inválida. Digite um número válido.")
