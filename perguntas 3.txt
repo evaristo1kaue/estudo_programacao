@@ -1,0 +1,8 @@
+1) Liste os títulos dos filmes e a data em que foram adicionados à Netflix, para todos os filmes que foram adicionados no ano de 2020.
+2) Encontre os diretores que dirigiram filmes com classificação "PG-13" e liste os títulos desses filmes.
+3) Liste os filmes que têm a palavra "Secret" no título e foram lançados em anos pares.
+4) Calcule a média de duração dos filmes de cada gênero (coluna listed_in).
+5) Encontre os filmes que foram adicionados à Netflix no mesmo mês e ano que a série "Stranger Things".
+6) Liste os filmes que têm a palavra "Love" no título e são do gênero "Romance".
+7) Liste os títulos dos filmes que têm mais de 3 atores/atrizes no elenco.
+8) Quais são os 3 gêneros de filmes com a maior média de ano de lançamento na Netflix?
