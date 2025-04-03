@@ -1,0 +1,14 @@
+1. Número de acidentes por condição climática
+Liste todas as condições climáticas (weather_condition) que tiveram pelo menos 100 acidentes registrados.
+
+2. Dias da semana com maior número de acidentes
+Mostre quais dias da semana (crash_day_of_week) tiveram mais de 500 acidentes.
+
+3. Número de acidentes por condição de iluminação
+Liste as condições de iluminação (lighting_condition) que tiveram mais de 200 acidentes registrados.
+
+4. Acidentes por tipo de via
+Quais tipos de via (trafficway_type) tiveram pelo menos 300 acidentes registrados?
+
+5. Acidentes com vítimas fatais
+Mostre os meses (crash_month) que tiveram mais de 10 acidentes fatais (injuries_fatal).
