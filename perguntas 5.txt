@@ -1,0 +1,63 @@
+Fácil (1-5)
+Acidentes por mês
+Liste os meses (crash_month) com mais de 200 acidentes.
+
+Tipos de colisão mais frequentes
+Mostre os tipos de colisão (first_crash_type) que ocorreram mais de 150 vezes.
+
+Condições da estrada e quantidade de acidentes
+Liste as condições da estrada (roadway_surface_cond) que tiveram mais de 300 acidentes.
+
+Acidentes por sinalização de trânsito
+Quais dispositivos de controle de tráfego (traffic_control_device) foram registrados em pelo menos 250 acidentes?
+
+Acidentes por condição de iluminação
+Mostre as condições de iluminação (lighting_condition) onde houve mais de 100 acidentes.
+
+Intermediário (6-10)
+Horários de pico de acidentes
+Exiba as horas do dia (crash_hour) onde houve mais de 400 acidentes.
+
+Ruas com maior número de acidentes
+Liste as ruas (trafficway_type) que tiveram pelo menos 500 acidentes registrados.
+
+Acidentes com feridos
+Exiba os tipos de colisão (first_crash_type) onde houve pelo menos 50 feridos (injuries_total).
+
+Acidentes fatais por condição climática
+Liste as condições climáticas (weather_condition) com mais de 5 mortes (injuries_fatal).
+
+Acidentes graves por condição de iluminação
+Quais condições de iluminação (lighting_condition) tiveram pelo menos 20 feridos incapacitantes (injuries_incapacitating)?
+
+Avançado (11-15)
+Acidentes por combinação de tempo e iluminação
+Mostre a combinação de condição climática (weather_condition) e iluminação (lighting_condition) que resultou em mais de 200 acidentes.
+
+Colisões graves por dia da semana
+Quais dias da semana (crash_day_of_week) tiveram mais de 50 feridos não incapacitantes (injuries_non_incapacitating)?
+
+Acidentes fatais por tipo de via
+Liste os tipos de via (trafficway_type) onde houve pelo menos 10 mortes.
+
+Dias da semana com mais acidentes em estradas molhadas
+Mostre os dias da semana (crash_day_of_week) com mais de 50 acidentes quando a estrada estava molhada (roadway_surface_cond = 'WET').
+
+Acidentes com múltiplos feridos
+Exiba os meses (crash_month) que tiveram pelo menos 100 feridos no total (injuries_total).
+
+Desafio (Muito Difícil) (16-20)
+Horários de maior risco para acidentes fatais
+Quais horas do dia (crash_hour) registraram mais de 5 mortes (injuries_fatal)?
+
+Padrão de colisões graves em condições específicas
+Liste as combinações de weather_condition, lighting_condition e roadway_surface_cond que resultaram em pelo menos 50 feridos incapacitantes.
+
+Duas condições simultâneas
+Mostre os meses (crash_month) onde houve mais de 100 acidentes e mais de 20 mortes (injuries_fatal).
+
+Analisando padrões semanais de acidentes fatais
+Liste os dias da semana (crash_day_of_week) onde houve pelo menos 3 acidentes fatais e mais de 20 feridos não incapacitantes.
+
+Analisando padrões de acidentes múltiplos
+Mostre os horários (crash_hour) onde houve pelo menos 5 mortes, 50 feridos incapacitantes e 100 feridos no total.
