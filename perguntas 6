@@ -1,0 +1,29 @@
+Question 1: Write a SQL query to select all columns for the first 10 rows of the traffic_accidents table.
+
+Question 2: Write a SQL query to find all accidents that occurred on a 'CLEAR' weather condition.
+
+Question 3: Write a SQL query to count the number of accidents for each traffic_control_device.
+
+Question 4: Write a SQL query to find the top 5 prim_contributory_cause that resulted in the most injuries (injuries_total).
+
+Question 5: Write a SQL query to find all accidents that occurred in 'DAYLIGHT' and where the lighting_condition was 'DARKNESS, LIGHTED ROAD'.
+
+Question 6: Write a SQL query to find the average number of num_units involved in accidents for each crash_type.
+
+Question 7: Write a SQL query to list the trafficway_type and the total damage amount (assuming the damage categories can be converted to numerical values - for this question, just group by trafficway_type and count the occurrences).
+
+Question 8: Write a SQL query to find the first_crash_type that has the highest number of fatal injuries (injuries_fatal).
+
+Question 9: Write a SQL query to list the crash_date and prim_contributory_cause for accidents where road_defect is not 'NO DEFECTS'.
+
+Question 10: Write a SQL query to find the most_severe_injury type and the total number of accidents for each type, but only include types with more than 1000 occurrences.
+
+Question 11: Write a SQL query to find the number of accidents that occurred on a Sunday (crash_day_of_week = 1) in January (crash_month = 1).
+
+Question 12: Write a SQL query to find the alignment and roadway_surface_cond for accidents where intersection_related_i is 'Y'.
+
+Question 13: Write a SQL query to find the total number of incapacitating injuries (injuries_incapacitating) for each weather_condition, ordered from highest to lowest.
+
+Question 14: Write a SQL query to find the crash_hour with the most accidents.
+
+Question 15: Write a SQL query to find the damage type and the average number of total injuries (injuries_total) for each damage type, excluding 'UNKNOWN' damage.
